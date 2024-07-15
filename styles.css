@@ -27,12 +27,13 @@ body {
 .image-container h1 {
     position: relative;
     text-align: center;
-    left: 20px;
+    left: 0px;
     font-size: 3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
+    border-radius: 20px;
 }
 
 .image-container img {
@@ -109,7 +110,7 @@ button:hover {
     background-color: purple;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
     .container {
         flex-direction: row;
         justify-content: space-between;
@@ -119,9 +120,22 @@ button:hover {
     .image-container {
         max-width: 50%;
         margin-right: 20px;
+        max-height: auto;
     }
 
     .form-container {
         max-width: 50%;
     }
+
+    main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-container {
+        flex-direction: column;
+    }
+
+
 }
