@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+
+    </nav>
+
+    <!-- Main Page -->
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <h1>Sign-up Form<i class='bx bx-mouse-alt'></i></h1>
+                <img src="Images/image1.jpg" alt="Flowers"> <!--Photo by Irina Iriser on pexels-->
+            </div>
+            <form action="/" method="post" class="form-container">
+                <div class="form-grid">
+                    <div class="grid-item">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" placeholder="Kobe" name="first_name" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" placeholder="Bryant" name="last_name" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" name="password" required>
+                    </div>
+                    <div class="grid-item">
+                        <label for="amount">Phone Number:</label>
+                        <input type="number" name="amount" id="amount" min="10" required>
+                    </div>
+                    <div class="grid-item">
+                        <textarea name="about_user" id="about_user" cols="30" rows="10" minlength="3" maxlength="100" placeholder="Who Are You?"></textarea>
+                    </div>
+                </div>
+                <div class="form-grid">
+                    <label for="occupation">Occupation:</label>
+                    <select name="job" id="user_job">
+                        <option value="engineer">Engineer</option>
+                        <option value="sports">Sports</option>
+                        <option value="education">Education</option>
+                        <option value="service">Customer Service</option>
+                    </select>
+                </div>
+                <div class="form-grid">
+                    <label for="happy">Are You Happy?</label>
+                    <input type="checkbox" id="happy" name="happy">
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+
+    </footer>
+</body>
+</html>
